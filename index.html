@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Color Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <!-- Modal for displaying messages -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p>Correct! You chose the right color.</p>
+            <button id="playAgainButton">Play Again</button>
+        </div>
+    </div>
+
+    <!-- Game title -->
+    <h1>Welcome to <span id="color-display">RGB</span> Guessing Game</h1>
+
+    <!-- Difficulty selection buttons -->
+    <div id="stripe">
+        <button id="reset">New Colors</button>
+        <span id="message"></span>
+        <!-- Difficulty buttons -->
+        <button class="mode">Easy</button>
+        <button class="mode selected">Medium</button>
+        <button class="mode">Hard</button>
+    </div>
+
+    <!-- Timer display -->
+    <div id="timer">Timer: <span id="timer-display">10</span> seconds</div>
+
+    <!-- Game container with colored circles -->
+    <div id="container">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <!-- JavaScript file to handle game logic -->
+    <script type="text/javascript" src="ex.js"></script>
+</body>
+
+</html>
