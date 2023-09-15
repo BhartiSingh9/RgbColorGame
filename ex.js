@@ -170,6 +170,6 @@ document.getElementById("playAgainButton").addEventListener("click", () => {
     // Reset the game state
     reset();
 });
-
+resetButton.addEventListener("click", reset);
 // Initialize the game when the page loads
 window.addEventListener("load", init);
